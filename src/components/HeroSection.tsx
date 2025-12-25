@@ -29,7 +29,7 @@ const HeroSection = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 md:px-8 relative z-10 pt-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen">
+        <div className="flex flex-col items-center justify-center min-h-screen gap-12 lg:gap-16">
           {/* Text Content */}
           <div
             className={`space-y-8 transition-all duration-1000 delay-300 ${
@@ -49,10 +49,10 @@ const HeroSection = () => {
               </div>
               
               <div className="space-y-1">
-                <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-slate-300">
+                <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-slate-300">
                   your Partner for
                 </p>
-                <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-orange-400">
+                <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-orange-400">
                   Scroll-Stopping Content
                 </p>
               </div>
