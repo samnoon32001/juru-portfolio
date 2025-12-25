@@ -91,21 +91,6 @@ const IntroVideoSection = () => {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
           >
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                variant="hero"
-                size="xl"
-                onClick={() => {
-                  const element = document.querySelector("#contact");
-                  element?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                Start Your Project
-              </Button>
-              <Button variant="glass" size="xl" onClick={scrollToNext}>
-                View Testimonials
-              </Button>
-            </div>
           </div>
         </div>
       </div>
