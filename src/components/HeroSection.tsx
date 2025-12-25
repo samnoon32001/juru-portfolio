@@ -21,18 +21,7 @@ const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center overflow-hidden bg-slate-900"
     >
-      {/* Navigation Bar */}
-      <div className="absolute top-0 left-0 right-0 z-20 p-6">
-        <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-          <div className="flex items-center gap-4">
-            <div className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center">
-              <User className="w-5 h-5 text-blue-400" />
-            </div>
-            <span className="text-white font-semibold">Juraij</span>
-          </div>
-        </div>
-      </div>
-
+      
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
@@ -98,29 +87,7 @@ const HeroSection = () => {
             }`}
           >
             <div className="relative group flex justify-center lg:justify-end w-80 h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem]">
-              {/* Software Badges - Positioned around profile image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                {/* Top Left - Premiere Pro */}
-                <div className="absolute top-8 md:top-12 left-8 md:left-12 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500 shadow-xl">
-                  <span className="text-blue-400 font-bold text-xs md:text-sm">Pr</span>
-                </div>
-                
-                {/* Top Right - After Effects */}
-                <div className="absolute top-8 md:top-12 right-8 md:right-12 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500 shadow-xl">
-                  <span className="text-blue-400 font-bold text-xs md:text-sm">Ae</span>
-                </div>
-                
-                {/* Bottom Left - DaVinci Resolve */}
-                <div className="absolute bottom-8 md:bottom-12 left-8 md:left-12 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500 shadow-xl">
-                  <span className="text-blue-400 font-bold text-xs md:text-sm">Da</span>
-                </div>
-                
-                {/* Bottom Right - Final Cut Pro */}
-                <div className="absolute bottom-8 md:bottom-12 right-8 md:right-12 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500 shadow-xl">
-                  <span className="text-blue-400 font-bold text-xs md:text-sm">Fc</span>
-                </div>
-              </div>
-
+              
               {/* Profile Image - Much larger with high pixel outline border */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl bg-transparent border-8 md:border-10 lg:border-12 border-blue-500">
