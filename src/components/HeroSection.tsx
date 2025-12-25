@@ -103,7 +103,7 @@ const HeroSection = () => {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border/30">
                 <div className="aspect-[3/4] bg-gradient-card">
                   <img
-                    src="https://i.pinimg.com/1200x/22/e1/cb/22e1cbe6a4c08c46d47548f47deb646d.jpg"
+                    src="https://i.pinimg.com/736x/1a/b9/33/1ab933bc30b7c382c24dbd0a46204325.jpg"
                     alt="Juraij - Video Editor"
                     className="w-full h-full object-cover"
                   />
