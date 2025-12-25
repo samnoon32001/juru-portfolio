@@ -53,19 +53,14 @@ const IntroVideoSection = () => {
               {/* Video Container */}
               <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-slate-700">
                 <div className="aspect-video bg-slate-800">
-                  <video
-                    ref={videoRef}
-                    className="w-full h-full object-cover"
-                    controls
-                    playsInline
-                    poster="https://images.unsplash.com/photo-1574375927918-3c5a602531d6?w=1200&h=675&fit=crop"
-                  >
-                    <source
-                      src="https://youtu.be/SdctcW_cG9Y"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/SdctcW_cG9Y"
+                    title="Why Choose Me?"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
 
                 {/* Glow Border Effect */}
