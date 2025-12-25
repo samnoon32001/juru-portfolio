@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import IntroVideoSection from "@/components/IntroVideoSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ShortFormSection from "@/components/ShortFormSection";
 import LongFormSection from "@/components/LongFormSection";
@@ -20,6 +21,7 @@ const Index = () => {
     <main className="bg-background min-h-screen">
       <Navbar />
       <HeroSection />
+      <IntroVideoSection />
       <TestimonialsSection />
       <ShortFormSection />
       <LongFormSection />
