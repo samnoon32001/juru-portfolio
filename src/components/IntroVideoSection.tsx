@@ -37,7 +37,7 @@ const IntroVideoSection = () => {
             }`}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white">
-              My <span className="text-blue-400">Video Showcase</span>
+              Why <span className="text-blue-400">Choose Me?</span>
             </h2>
             <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
               See my work in action - from cinematic storytelling to engaging short-form content
@@ -61,7 +61,7 @@ const IntroVideoSection = () => {
                     poster="https://images.unsplash.com/photo-1574375927918-3c5a602531d6?w=1200&h=675&fit=crop"
                   >
                     <source
-                      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                      src="https://youtu.be/SdctcW_cG9Y"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
