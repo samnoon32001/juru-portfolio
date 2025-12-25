@@ -98,37 +98,37 @@ const HeroSection = () => {
             }`}
           >
             <div className="relative group flex justify-center lg:justify-end w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem]">
-              {/* Halo Ring - Made wider and larger */}
+              {/* Halo Ring - Background circle */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-full h-full rounded-full border-6 md:border-10 lg:border-12 border-blue-500 opacity-80" />
+                <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-8 md:border-12 lg:border-16 border-blue-500 opacity-80" />
               </div>
 
-              {/* Software Badges - Adjusted for larger halo */}
-              <div className="absolute inset-0 w-full h-full mx-auto">
+              {/* Software Badges - Within halo circle */}
+              <div className="absolute inset-0 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto">
                 {/* Top Left - Premiere Pro */}
-                <div className="absolute top-6 md:top-8 left-6 md:left-8 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                <div className="absolute top-4 md:top-6 left-4 md:left-6 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Pr</span>
                 </div>
                 
                 {/* Top Right - After Effects */}
-                <div className="absolute top-6 md:top-8 right-6 md:right-8 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                <div className="absolute top-4 md:top-6 right-4 md:right-6 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Ae</span>
                 </div>
                 
                 {/* Center Left - DaVinci Resolve */}
-                <div className="absolute top-1/2 left-6 md:left-8 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                <div className="absolute top-1/2 left-4 md:left-6 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Da</span>
                 </div>
                 
                 {/* Center Right - Final Cut Pro */}
-                <div className="absolute top-1/2 right-6 md:right-8 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                <div className="absolute top-1/2 right-4 md:right-6 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Fc</span>
                 </div>
               </div>
 
-              {/* Portrait Image - Perfectly centered within halo */}
+              {/* Profile Image - Square, positioned over halo */}
               <div className="relative z-10 flex items-center justify-center">
-                <div className="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-slate-700 shadow-2xl">
+                <div className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 overflow-hidden border-4 border-slate-700 shadow-2xl">
                   <img
                     src="/profile.png"
                     alt="Juraij - Video Editor"
