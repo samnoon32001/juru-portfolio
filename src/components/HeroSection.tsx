@@ -100,7 +100,7 @@ const HeroSection = () => {
             <div className="relative group flex justify-center lg:justify-end w-80 h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem]">
               {/* Halo Ring - Much wider background circle */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-72 h-72 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] rounded-full border-16 md:border-20 lg:border-24 border-blue-500 opacity-80" />
+                <div className="w-72 h-72 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] rounded-full border-20 md:border-24 lg:border-28 border-blue-500 opacity-100" />
               </div>
 
               {/* Software Badges - Within halo circle */}
@@ -126,9 +126,9 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* Profile Image - Square with transparent SVG, perfectly centered */}
+              {/* Profile Image - Larger square with transparent SVG, perfectly centered */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 overflow-hidden shadow-2xl bg-transparent">
+                <div className="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 overflow-hidden shadow-2xl bg-transparent">
                   <img
                     src="/profile.svg"
                     alt="Juraij - Video Editor"
