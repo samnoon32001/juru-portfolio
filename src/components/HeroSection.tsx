@@ -60,14 +60,6 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="space-y-4 max-w-xl">
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Welcome to my creative space! I'm Juraij — the mind behind captivating video edits. I turn raw footage into unforgettable visual stories that hooks hearts and attention.
-              </p>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Whether it's motion graphics, visual effects, or seamless storytelling, my passion is to make your vision unforgettable. Let's create something extraordinary together!
-              </p>
-            </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
