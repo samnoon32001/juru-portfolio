@@ -40,16 +40,16 @@ const HeroSection = () => {
           >
             <div className="space-y-6">
               <div className="space-y-2">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight text-white">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold leading-tight text-white">
                   Hey there!
                 </h1>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold leading-tight text-blue-400">
+                <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold leading-tight text-blue-400">
                   Juraij here
                 </h2>
               </div>
               
               <div className="space-y-1">
-                <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-300">
+                <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-slate-300">
                   your Partner for
                 </p>
                 <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-orange-400">
@@ -90,7 +90,7 @@ const HeroSection = () => {
               
               {/* Profile Image - Much larger with high pixel outline border */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl bg-transparent border-8 md:border-10 lg:border-12 border-blue-500">
+                <div className="w-72 h-72 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl bg-transparent">
                   <img
                     src="/profile.svg"
                     alt="Juraij - Video Editor"
