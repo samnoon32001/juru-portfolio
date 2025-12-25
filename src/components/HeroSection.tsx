@@ -30,16 +30,6 @@ const HeroSection = () => {
             </div>
             <span className="text-white font-semibold">Juraij</span>
           </div>
-          <Button
-            variant="default"
-            className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-6"
-            onClick={() => {
-              const element = document.querySelector("#contact");
-              element?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Contact
-          </Button>
         </div>
       </div>
 
@@ -117,41 +107,43 @@ const HeroSection = () => {
             }`}
           >
             <div className="relative group flex justify-center lg:justify-end">
-              {/* Halo Ring */}
+              {/* Halo Ring - Made wider and larger */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 md:border-8 border-blue-500 opacity-80" />
+                <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full border-6 md:border-10 lg:border-12 border-blue-500 opacity-80" />
               </div>
 
-              {/* Software Badges */}
-              <div className="absolute inset-0 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto">
+              {/* Software Badges - Adjusted for larger halo */}
+              <div className="absolute inset-0 w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] mx-auto">
                 {/* Top Left - Premiere Pro */}
-                <div className="absolute top-4 md:top-8 left-4 md:left-8 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                <div className="absolute top-6 md:top-8 left-6 md:left-8 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Pr</span>
                 </div>
                 
                 {/* Top Right - After Effects */}
-                <div className="absolute top-4 md:top-8 right-4 md:right-8 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                <div className="absolute top-6 md:top-8 right-6 md:right-8 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Ae</span>
                 </div>
                 
                 {/* Center Left - DaVinci Resolve */}
-                <div className="absolute top-1/2 left-4 md:left-8 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                <div className="absolute top-1/2 left-6 md:left-8 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Da</span>
                 </div>
                 
                 {/* Center Right - Final Cut Pro */}
-                <div className="absolute top-1/2 right-4 md:right-8 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                <div className="absolute top-1/2 right-6 md:right-8 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Fc</span>
                 </div>
               </div>
 
-              {/* Portrait Image */}
-              <div className="relative z-10 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-slate-700 shadow-2xl">
-                <img
-                  src="/profile.png"
-                  alt="Juraij - Video Editor"
-                  className="w-full h-full object-cover"
-                />
+              {/* Portrait Image - Perfectly centered within halo */}
+              <div className="relative z-10 flex items-center justify-center">
+                <div className="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-slate-700 shadow-2xl">
+                  <img
+                    src="/profile.png"
+                    alt="Juraij - Video Editor"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
 
               {/* Floating Elements */}
