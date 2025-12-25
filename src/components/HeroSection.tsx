@@ -100,20 +100,12 @@ const HeroSection = () => {
           >
             <div className="relative group">
               {/* Image Container */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border/30">
-                <div className="aspect-[3/4] bg-gradient-card">
-                  <img
-                    src="https://i.pinimg.com/736x/1a/b9/33/1ab933bc30b7c382c24dbd0a46204325.jpg"
-                    alt="Juraij - Video Editor"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent" />
-
-                {/* Glow Border Effect */}
-                <div className="absolute inset-0 rounded-3xl border border-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative rounded-full overflow-hidden shadow-2xl border border-border/30 w-80 h-80 mx-auto">
+                <img
+                  src="https://i.pinimg.com/736x/ff/58/29/ff58298ea6b60fe2abbf725973e3ee53.jpg"
+                  alt="Juraij - Video Editor"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Floating Elements */}
