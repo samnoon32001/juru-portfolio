@@ -97,14 +97,14 @@ const HeroSection = () => {
                 : "opacity-0 translate-x-12"
             }`}
           >
-            <div className="relative group flex justify-center lg:justify-end w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem]">
-              {/* Halo Ring - Background circle */}
+            <div className="relative group flex justify-center lg:justify-end w-80 h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem]">
+              {/* Halo Ring - Wider background circle */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-8 md:border-12 lg:border-16 border-blue-500 opacity-80" />
+                <div className="w-72 h-72 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] rounded-full border-8 md:border-12 lg:border-16 border-blue-500 opacity-80" />
               </div>
 
               {/* Software Badges - Within halo circle */}
-              <div className="absolute inset-0 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto">
+              <div className="absolute inset-0 w-72 h-72 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] mx-auto">
                 {/* Top Left - Premiere Pro */}
                 <div className="absolute top-4 md:top-6 left-4 md:left-6 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Pr</span>
@@ -126,9 +126,9 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* Profile Image - Square, positioned over halo */}
-              <div className="relative z-10 flex items-center justify-center">
-                <div className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 overflow-hidden border-4 border-slate-700 shadow-2xl">
+              {/* Profile Image - Square, perfectly centered over halo */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 overflow-hidden shadow-2xl">
                   <img
                     src="/profile.png"
                     alt="Juraij - Video Editor"
