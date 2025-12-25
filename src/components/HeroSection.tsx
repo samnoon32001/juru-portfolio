@@ -98,37 +98,32 @@ const HeroSection = () => {
             }`}
           >
             <div className="relative group flex justify-center lg:justify-end w-80 h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem]">
-              {/* Halo Ring - Much wider background circle */}
+              {/* Software Badges - Positioned around profile image */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-72 h-72 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] rounded-full border-20 md:border-24 lg:border-28 border-blue-500 opacity-100" />
-              </div>
-
-              {/* Software Badges - Within halo circle */}
-              <div className="absolute inset-0 w-72 h-72 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] mx-auto">
                 {/* Top Left - Premiere Pro */}
-                <div className="absolute top-4 md:top-6 left-4 md:left-6 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                <div className="absolute top-8 md:top-12 left-8 md:left-12 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500 shadow-xl">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Pr</span>
                 </div>
                 
                 {/* Top Right - After Effects */}
-                <div className="absolute top-4 md:top-6 right-4 md:right-6 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                <div className="absolute top-8 md:top-12 right-8 md:right-12 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500 shadow-xl">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Ae</span>
                 </div>
                 
-                {/* Center Left - DaVinci Resolve */}
-                <div className="absolute top-1/2 left-4 md:left-6 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                {/* Bottom Left - DaVinci Resolve */}
+                <div className="absolute bottom-8 md:bottom-12 left-8 md:left-12 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500 shadow-xl">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Da</span>
                 </div>
                 
-                {/* Center Right - Final Cut Pro */}
-                <div className="absolute top-1/2 right-4 md:right-6 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
+                {/* Bottom Right - Final Cut Pro */}
+                <div className="absolute bottom-8 md:bottom-12 right-8 md:right-12 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500 shadow-xl">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Fc</span>
                 </div>
               </div>
 
-              {/* Profile Image - Larger square with transparent SVG, perfectly centered */}
+              {/* Profile Image - Much larger with high pixel outline border */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 overflow-hidden shadow-2xl bg-transparent">
+                <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl bg-transparent border-8 md:border-10 lg:border-12 border-blue-500">
                   <img
                     src="/profile.svg"
                     alt="Juraij - Video Editor"
