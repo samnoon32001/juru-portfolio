@@ -18,7 +18,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="bg-background min-h-screen">
+    <main className="bg-slate-900 min-h-screen">
       <Navbar />
       <HeroSection />
       <IntroVideoSection />
