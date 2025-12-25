@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Play, ArrowDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ArrowDown } from "lucide-react";
 
 const IntroVideoSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,7 +19,7 @@ const IntroVideoSection = () => {
   return (
     <section
       id="intro-video"
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative py-20 lg:py-32 overflow-hidden bg-background"
     >
       {/* Background */}
       <div className="absolute inset-0 z-0">
@@ -31,7 +30,7 @@ const IntroVideoSection = () => {
       <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-primary/8 rounded-full blur-[200px] -translate-y-1/2" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        <div className="text-center space-y-8">
+        <div className="text-center space-y-12">
           <div
             className={`space-y-6 transition-all duration-1000 delay-300 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
@@ -52,7 +51,7 @@ const IntroVideoSection = () => {
           >
             <div className="relative group">
               {/* Video Container */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border/30">
+              <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-border/30">
                 <div className="aspect-video bg-gradient-card">
                   <video
                     ref={videoRef}
@@ -69,28 +68,14 @@ const IntroVideoSection = () => {
                   </video>
                 </div>
 
-                {/* Overlay Play Button */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="w-20 h-20 bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Play className="w-8 h-8 text-primary fill-current ml-1" />
-                  </div>
-                </div>
-
                 {/* Glow Border Effect */}
-                <div className="absolute inset-0 rounded-3xl border border-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 rounded-2xl md:rounded-3xl border border-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
               {/* Floating Elements */}
               <div className="absolute -top-6 -right-8 w-24 h-24 bg-primary/15 rounded-full blur-3xl animate-float" />
               <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
             </div>
-          </div>
-
-          <div
-            className={`transition-all duration-1000 delay-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-            }`}
-          >
           </div>
         </div>
       </div>
