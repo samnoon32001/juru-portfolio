@@ -40,7 +40,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo - Removed FrameCraft */}
           <a
             href="#home"
             onClick={(e) => {
@@ -52,9 +52,6 @@ const Navbar = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-gold flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <Play className="w-5 h-5 text-primary-foreground fill-current" />
             </div>
-            <span className="font-display text-xl font-bold text-foreground">
-              FrameCraft
-            </span>
           </a>
 
           {/* Desktop Navigation */}

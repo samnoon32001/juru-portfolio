@@ -69,15 +69,6 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="space-y-4 max-w-xl">
-              <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
-                Welcome to my creative space! I'm Juraij — the mind behind captivating video edits. I turn raw footage into unforgettable visual stories that hooks hearts and attention.
-              </p>
-              <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
-                Whether it's motion graphics, visual effects, or seamless storytelling, my passion is to make your vision unforgettable. Let's create something extraordinary together!
-              </p>
-            </div>
-
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full"
@@ -106,14 +97,14 @@ const HeroSection = () => {
                 : "opacity-0 translate-x-12"
             }`}
           >
-            <div className="relative group flex justify-center lg:justify-end">
+            <div className="relative group flex justify-center lg:justify-end w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem]">
               {/* Halo Ring - Made wider and larger */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full border-6 md:border-10 lg:border-12 border-blue-500 opacity-80" />
+                <div className="w-full h-full rounded-full border-6 md:border-10 lg:border-12 border-blue-500 opacity-80" />
               </div>
 
               {/* Software Badges - Adjusted for larger halo */}
-              <div className="absolute inset-0 w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] mx-auto">
+              <div className="absolute inset-0 w-full h-full mx-auto">
                 {/* Top Left - Premiere Pro */}
                 <div className="absolute top-6 md:top-8 left-6 md:left-8 w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-full flex items-center justify-center border-2 border-blue-500">
                   <span className="text-blue-400 font-bold text-xs md:text-sm">Pr</span>
