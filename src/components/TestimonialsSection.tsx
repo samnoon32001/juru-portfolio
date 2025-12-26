@@ -80,15 +80,16 @@ const TestimonialsSection = () => {
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16 md:mb-20">
+        <div className="text-center mb-20 md:mb-24">
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
             Client Stories
           </span>
-          <h2 className="section-title mb-4">
-            What <span className="text-gradient">Clients</span> Say
+          <h2 className="section-title mb-4 leading-tight">
+            Hear It From My<br />
+            <span className="text-gradient">Happy Clients...</span>
           </h2>
-          <p className="section-subtitle mx-auto">
-            Real feedback from creators and brands I've had the pleasure to work with.
+          <p className="section-subtitle mx-auto leading-relaxed">
+            Nothing speaks louder than real experiences! Hear directly from my clients about how my video editing services have transformed their content.
           </p>
         </div>
 
