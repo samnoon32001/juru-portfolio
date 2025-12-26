@@ -48,12 +48,12 @@ const HeroSection = () => {
                 </h2>
               </div>
               
-              <div className="space-y-4 max-w-xl">
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                  Welcome to my creative space! I'm Juraij — the mind behind captivating video edits. I turn raw footage into unforgettable visual stories that hooks hearts and attention.
+              <div className="space-y-1">
+                <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-muted-foreground">
+                  your Partner for
                 </p>
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                  Whether it's motion graphics, visual effects, or seamless storytelling, my passion is to make your vision unforgettable. Let's create something extraordinary together!
+                <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-primary">
+                  Scroll-Stopping Content
                 </p>
               </div>
 
