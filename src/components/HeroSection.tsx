@@ -38,11 +38,11 @@ const HeroSection = () => {
                 : "opacity-0 -translate-x-12"
             }`}
           >
-            <div className="relative group flex justify-center md:justify-start w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 md:ml-32 lg:ml-40">
+            <div className="relative group flex justify-center md:justify-start w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 md:ml-32 lg:ml-40">
               
               {/* Profile Image - Smaller */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl bg-transparent">
+                <div className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl bg-transparent">
                   <img
                     src="/profile.svg"
                     alt="Juraij - Video Editor"
