@@ -29,7 +29,7 @@ const HeroSection = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-6 md:px-12 relative z-10 pt-20">
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center min-h-screen">
+        <div className="grid md:grid-cols-2 gap-4 lg:gap-8 items-center min-h-screen">
           {/* Profile Image - Now on left */}
           <div
             className={`relative transition-all duration-1000 delay-500 ${
@@ -38,7 +38,7 @@ const HeroSection = () => {
                 : "opacity-0 -translate-x-12"
             }`}
           >
-            <div className="relative group flex justify-center md:justify-start w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 md:ml-8 lg:ml-12">
+            <div className="relative group flex justify-center md:justify-start w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 md:ml-16 lg:ml-20">
               
               {/* Profile Image - Smaller */}
               <div className="absolute inset-0 flex items-center justify-center">
@@ -92,16 +92,6 @@ const HeroSection = () => {
                   onClick={scrollToIntro}
                 >
                   Watch My Work
-                </Button>
-                <Button 
-                  variant="outline"
-                  className="border-border text-foreground hover:bg-accent px-8 py-3 rounded-full"
-                  onClick={() => {
-                    const element = document.querySelector("#contact");
-                    element?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                >
-                  Hire Me
                 </Button>
               </div>
             </div>
