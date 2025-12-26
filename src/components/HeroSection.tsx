@@ -38,7 +38,7 @@ const HeroSection = () => {
                 : "opacity-0 -translate-x-12"
             }`}
           >
-            <div className="relative group flex justify-center md:justify-start w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80">
+            <div className="relative group flex justify-center md:justify-start w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 md:ml-8 lg:ml-12">
               
               {/* Profile Image - Smaller */}
               <div className="absolute inset-0 flex items-center justify-center">
@@ -60,7 +60,7 @@ const HeroSection = () => {
           {/* Text Content - Now on right */}
           {/* Text content section - fixed syntax */}
           <div
-            className={`space-y-8 transition-all duration-1000 delay-300 ${
+            className={`space-y-8 transition-all duration-1000 delay-300 md:mr-8 lg:mr-12 ${
               isVisible
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 translate-x-12"
