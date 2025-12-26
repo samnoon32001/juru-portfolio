@@ -29,7 +29,7 @@ const HeroSection = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 md:px-8 relative z-10 pt-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen">
           {/* Text Content */}
           <div
             className={`space-y-8 transition-all duration-1000 delay-300 ml-8 md:ml-12 lg:ml-16 ${

@@ -172,7 +172,7 @@ const ShortFormSection = () => {
               onMouseLeave={() => setHoveredId(null)}
             >
               <div className="video-card group cursor-pointer">
-                <div className="aspect-[9/16] relative overflow-hidden rounded-xl w-48 h-80 md:w-56 md:h-96">
+                <div className="aspect-[9/16] relative overflow-hidden rounded-xl w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px] mx-auto">
                   <img
                     src={video.thumbnail}
                     alt={video.title}
