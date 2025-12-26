@@ -38,7 +38,7 @@ const HeroSection = () => {
                 : "opacity-0 -translate-x-12"
             }`}
           >
-            <div className="relative group flex justify-center md:justify-start w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 md:ml-16 lg:ml-20">
+            <div className="relative group flex justify-center md:justify-start w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 md:ml-24 lg:ml-32">
               
               {/* Profile Image - Smaller */}
               <div className="absolute inset-0 flex items-center justify-center">
