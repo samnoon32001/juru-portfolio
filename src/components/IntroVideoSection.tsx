@@ -69,8 +69,8 @@ const IntroVideoSection = () => {
               </div>
 
               {/* Floating Elements */}
-              <div className="absolute -top-6 -right-8 w-24 h-24 bg-blue-500/15 rounded-full blur-3xl animate-float" />
-              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
+              <div className="absolute -top-6 -right-8 w-24 h-24 bg-blue-500/15 rounded-full blur-3xl animate-float pointer-events-none" />
+              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-float pointer-events-none" style={{ animationDelay: "3s" }} />
             </div>
           </div>
         </div>
