@@ -37,7 +37,7 @@ const IntroVideoSection = () => {
             }`}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground">
-              Why <span className="text-primary">Choose Me?</span>
+              Why <span className="text-gradient">Choose Me?</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               See my work in action - from cinematic storytelling to engaging short-form content

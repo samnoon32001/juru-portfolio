@@ -38,11 +38,11 @@ const HeroSection = () => {
                 : "opacity-0 -translate-x-12"
             }`}
           >
-            <div className="relative group flex justify-center md:justify-start w-80 h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem]">
+            <div className="relative group flex justify-center md:justify-start w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80">
               
-              {/* Profile Image - Much larger with high pixel outline border */}
+              {/* Profile Image - Smaller */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-80 h-80 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden shadow-2xl bg-transparent">
+                <div className="w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl bg-transparent">
                   <img
                     src="/profile.svg"
                     alt="Juraij - Video Editor"
@@ -52,8 +52,8 @@ const HeroSection = () => {
               </div>
 
               {/* Floating Elements */}
-              <div className="absolute -top-4 md:-top-6 -right-4 md:-right-6 w-16 h-16 md:w-20 md:h-20 bg-blue-500/20 rounded-full blur-2xl animate-float" />
-              <div className="absolute -bottom-6 md:-bottom-8 -left-6 md:-left-8 w-24 h-24 md:w-32 md:h-32 bg-blue-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+              <div className="absolute -top-2 md:-top-3 -right-2 md:-right-3 w-12 h-12 md:w-16 md:h-16 bg-blue-500/20 rounded-full blur-2xl animate-float" />
+              <div className="absolute -bottom-3 md:-bottom-4 -left-3 md:-left-4 w-16 h-16 md:w-24 md:h-24 bg-blue-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
             </div>
           </div>
 
@@ -66,21 +66,21 @@ const HeroSection = () => {
                 : "opacity-0 translate-x-12"
             }`}
           >
-            <div className="space-y-6">
+            <div className="space-y-4">
               <div className="space-y-2">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-display font-bold leading-tight text-foreground">
+                <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-display font-bold leading-tight text-foreground">
                   Hey there!
                 </h1>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight text-primary">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold leading-tight text-gradient">
                   Juraij here
                 </h2>
               </div>
               
               <div className="space-y-1">
-                <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold" style={{ color: "#000000" }}>
+                <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold" style={{ color: "#000000" }}>
                   your Partner for
                 </p>
-                <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold" style={{ color: "#636fcb", backgroundColor: "#636fcb", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+                <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold" style={{ color: "#636fcb", backgroundColor: "#636fcb", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
                   Scroll-Stopping Content
                 </p>
               </div>
