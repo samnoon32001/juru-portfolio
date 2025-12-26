@@ -55,7 +55,7 @@ const IntroVideoSection = () => {
                 <div className="aspect-video bg-slate-800">
                   <iframe
                     className="w-full h-full"
-                    src="https://www.youtube.com/embed/SdctcW_cG9Y?si=w2yXF6_Zwl-6nyk5&autoplay=1&mute=1&rel=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/SdctcW_cG9Y?si=w2yXF6_Zwl-6nyk5&autoplay=1&rel=0&modestbranding=1&controls=1"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
