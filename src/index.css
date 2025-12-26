@@ -7,32 +7,32 @@
 @layer base {
   :root {
     --background: 210 100% 98%;
-    --foreground: 210 20% 15%;
+    --foreground: 220 90% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 20% 15%;
+    --card-foreground: 220 90% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 20% 15%;
+    --popover-foreground: 220 90% 10%;
 
-    --primary: 210 100% 95%;
-    --primary-foreground: 210 20% 15%;
+    --primary: 220 90% 18%;
+    --primary-foreground: 210 100% 98%;
 
     --secondary: 210 40% 96%;
-    --secondary-foreground: 210 20% 15%;
+    --secondary-foreground: 220 90% 10%;
 
     --muted: 210 30% 92%;
-    --muted-foreground: 210 15% 45%;
+    --muted-foreground: 220 20% 25%;
 
     --accent: 210 100% 95%;
-    --accent-foreground: 210 20% 15%;
+    --accent-foreground: 220 90% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 210 30% 85%;
     --input: 210 30% 90%;
-    --ring: 210 100% 95%;
+    --ring: 220 90% 18%;
 
     --radius: 0.75rem;
 
@@ -50,13 +50,13 @@
     --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --sidebar-background: 210 100% 98%;
-    --sidebar-foreground: 210 20% 15%;
-    --sidebar-primary: 210 100% 95%;
-    --sidebar-primary-foreground: 210 20% 15%;
+    --sidebar-foreground: 220 90% 10%;
+    --sidebar-primary: 220 90% 18%;
+    --sidebar-primary-foreground: 210 100% 98%;
     --sidebar-accent: 210 40% 96%;
-    --sidebar-accent-foreground: 210 20% 15%;
+    --sidebar-accent-foreground: 220 90% 10%;
     --sidebar-border: 210 30% 85%;
-    --sidebar-ring: 210 100% 95%;
+    --sidebar-ring: 220 90% 18%;
   }
 
   .dark {
