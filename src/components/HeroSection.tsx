@@ -28,8 +28,8 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 md:px-8 relative z-10 pt-20">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen">
+      <div className="container mx-auto px-6 md:px-12 relative z-10 pt-20">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center min-h-screen">
           {/* Profile Image - Now on left */}
           <div
             className={`relative transition-all duration-1000 delay-500 ${
@@ -117,6 +117,20 @@ const HeroSection = () => {
           <span className="text-sm font-medium">See my work</span>
           <ArrowDown className="w-5 h-5 animate-bounce" />
         </button>
+      </div>
+    </section>
+
+      {/* Small Circle with Editor Text */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
+        <div className="flex items-center justify-center">
+          <div className="relative">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-gold shadow-glow animate-pulse flex items-center justify-center">
+              <span className="text-xs md:text-sm font-bold text-primary-foreground whitespace-nowrap">
+                MUHAMMAD JURAIJ Editor
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
