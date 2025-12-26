@@ -49,7 +49,7 @@ const Navbar = () => {
       } bg-transparent`}
     >
       <div className="container mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between h-20 mr-8 md:mr-12 lg:mr-16">
+        <div className="flex items-center justify-between h-20 ml-8 md:ml-12 lg:ml-16">
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex-1 md:flex md:items-center md:justify-center md:gap-8">
