@@ -28,7 +28,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-6 md:px-12 relative z-10 pt-20">
+      <div className="container mx-auto px-8 md:px-16 relative z-10 pt-20">
         <div className="grid md:grid-cols-2 gap-4 lg:gap-8 items-center min-h-screen">
           {/* Profile Image - Now on left */}
           <div
@@ -38,7 +38,7 @@ const HeroSection = () => {
                 : "opacity-0 -translate-x-12"
             }`}
           >
-            <div className="relative group flex justify-center md:justify-start w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 md:ml-24 lg:ml-32">
+            <div className="relative group flex justify-center md:justify-start w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 md:ml-32 lg:ml-40">
               
               {/* Profile Image - Smaller */}
               <div className="absolute inset-0 flex items-center justify-center">
