@@ -118,7 +118,6 @@ const HeroSection = () => {
           <ArrowDown className="w-5 h-5 animate-bounce" />
         </button>
       </div>
-    </section>
 
       {/* Small Circle with Editor Text */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
