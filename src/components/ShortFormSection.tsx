@@ -56,13 +56,50 @@ const shortVideos: ShortVideo[] = [
     views: "1.5M views",
     videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
   },
+  {
+    id: 7,
+    title: "Fashion Showcase",
+    thumbnail: reelThumb3,
+    views: "2.8M views",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+  },
+  {
+    id: 8,
+    title: "Food Photography",
+    thumbnail: reelThumb4,
+    views: "3.6M views",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+  },
+  {
+    id: 9,
+    title: "Music Video",
+    thumbnail: reelThumb1,
+    views: "4.2M views",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+  },
+  {
+    id: 10,
+    title: "Sports Highlights",
+    thumbnail: reelThumb2,
+    views: "6.7M views",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+  },
 ];
+
+const ITEMS_PER_PAGE = 10;
 
 const ShortFormSection = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [currentPage, setCurrentPage] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
+
+  const totalPages = Math.ceil(shortVideos.length / ITEMS_PER_PAGE);
+  const currentVideos = shortVideos.slice(
+    currentPage * ITEMS_PER_PAGE,
+    (currentPage + 1) * ITEMS_PER_PAGE
+  );
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -119,32 +156,13 @@ const ShortFormSection = () => {
           </p>
         </div>
 
-        {/* Navigation Arrows */}
-        <div className="flex justify-end gap-2 mb-6">
-          <button
-            onClick={() => scroll("left")}
-            className="p-3 rounded-full bg-secondary hover:bg-primary/20 transition-colors border border-border"
-          >
-            <ChevronLeft className="w-5 h-5 text-foreground" />
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            className="p-3 rounded-full bg-secondary hover:bg-primary/20 transition-colors border border-border"
-          >
-            <ChevronRight className="w-5 h-5 text-foreground" />
-          </button>
-        </div>
-
-        {/* Horizontal Scroll Container */}
-        <div
-          ref={scrollRef}
-          className="flex gap-6 overflow-x-auto pb-6 scrollbar-hide snap-x snap-mandatory"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {shortVideos.map((video, index) => (
+        
+        {/* Video Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+          {currentVideos.map((video, index) => (
             <div
               key={video.id}
-              className={`flex-shrink-0 w-64 snap-center transition-all duration-700 ${
+              className={`transition-all duration-700 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-12"
@@ -154,7 +172,7 @@ const ShortFormSection = () => {
               onMouseLeave={() => setHoveredId(null)}
             >
               <div className="video-card group cursor-pointer">
-                <div className="aspect-[9/16] relative overflow-hidden rounded-xl">
+                <div className="aspect-[9/16] relative overflow-hidden rounded-xl w-48 h-80 md:w-56 md:h-96">
                   <img
                     src={video.thumbnail}
                     alt={video.title}
@@ -195,6 +213,45 @@ const ShortFormSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Pagination */}
+        <div className="flex justify-center items-center gap-2 mt-8">
+          <button
+            onClick={() =>
+              setCurrentPage((prev) => Math.max(0, prev - 1))
+            }
+            disabled={currentPage === 0}
+            className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <ChevronLeft className="w-5 h-5 text-foreground" />
+          </button>
+          
+          <div className="flex gap-1">
+            {Array.from({ length: totalPages }, (_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentPage(i)}
+                className={`w-8 h-8 rounded-lg transition-colors ${
+                  currentPage === i
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-secondary hover:bg-primary/20 text-foreground"
+                }`}
+              >
+                {i + 1}
+              </button>
+            ))}
+          </div>
+
+          <button
+            onClick={() =>
+              setCurrentPage((prev) => Math.min(totalPages - 1, prev + 1))
+            }
+            disabled={currentPage === totalPages - 1}
+            className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <ChevronRight className="w-5 h-5 text-foreground" />
+          </button>
         </div>
       </div>
     </section>

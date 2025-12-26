@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:gap-8">
+          <div className="hidden md:flex md:items-center md:gap-8 ml-8 md:ml-12 lg:ml-16">
             {navLinks.map((link) => (
               <a
                 key={link.href}
