@@ -49,10 +49,10 @@ const Navbar = () => {
       } bg-transparent`}
     >
       <div className="container mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between h-20 ml-8 md:ml-12 lg:ml-16">
+        <div className="flex items-center justify-between h-20 px-4 md:px-8 lg:px-16">
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex-1 md:flex md:items-center md:justify-center md:gap-8">
+          <div className="hidden md:flex-1 md:flex md:items-center md:justify-start md:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
