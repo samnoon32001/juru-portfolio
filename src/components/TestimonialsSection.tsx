@@ -85,7 +85,7 @@ const TestimonialsSection = () => {
             Client Stories
           </span>
           <h2 className="section-title mb-4 leading-tight">
-            Hear It From My<br />
+            <span className="text-lg md:text-xl lg:text-2xl text-muted-foreground">Hear It From My</span><br />
             <span className="text-gradient">Happy Clients...</span>
           </h2>
           <p className="section-subtitle mx-auto leading-relaxed">
