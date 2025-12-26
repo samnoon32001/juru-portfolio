@@ -87,7 +87,8 @@ const HeroSection = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full"
+                  variant="hero"
+                  size="lg"
                   onClick={scrollToIntro}
                 >
                   Watch My Work
@@ -119,19 +120,7 @@ const HeroSection = () => {
         </button>
       </div>
 
-      {/* Small Circle with Editor Text */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
-        <div className="flex items-center justify-center">
-          <div className="relative">
-            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-gold shadow-glow animate-pulse flex items-center justify-center">
-              <span className="text-xs md:text-sm font-bold text-primary-foreground whitespace-nowrap">
-                MUHAMMAD JURAIJ Editor
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </section>
   );
 };
 
