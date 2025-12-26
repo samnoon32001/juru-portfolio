@@ -30,12 +30,40 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="container mx-auto px-4 md:px-8 relative z-10 pt-20">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen">
-          {/* Text Content */}
+          {/* Profile Image - Now on left */}
           <div
-            className={`space-y-8 transition-all duration-1000 delay-300 ml-8 md:ml-12 lg:ml-16 ${
+            className={`relative transition-all duration-1000 delay-500 ${
               isVisible
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 -translate-x-12"
+            }`}
+          >
+            <div className="relative group flex justify-center md:justify-start w-80 h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem]">
+              
+              {/* Profile Image - Much larger with high pixel outline border */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-80 h-80 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden shadow-2xl bg-transparent">
+                  <img
+                    src="/profile.svg"
+                    alt="Juraij - Video Editor"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+
+              {/* Floating Elements */}
+              <div className="absolute -top-4 md:-top-6 -right-4 md:-right-6 w-16 h-16 md:w-20 md:h-20 bg-blue-500/20 rounded-full blur-2xl animate-float" />
+              <div className="absolute -bottom-6 md:-bottom-8 -left-6 md:-left-8 w-24 h-24 md:w-32 md:h-32 bg-blue-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+            </div>
+          </div>
+
+          {/* Text Content - Now on right */}
+          {/* Text content section - fixed syntax */}
+          <div
+            className={`space-y-8 transition-all duration-1000 delay-300 ${
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-12"
             }`}
           >
             <div className="space-y-6">
@@ -49,10 +77,10 @@ const HeroSection = () => {
               </div>
               
               <div className="space-y-1">
-                <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-muted-foreground">
+                <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold" style={{ color: "#000000" }}>
                   your Partner for
                 </p>
-                <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-primary">
+                <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold" style={{ color: "#636fcb", backgroundColor: "#636fcb", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
                   Scroll-Stopping Content
                 </p>
               </div>
@@ -72,36 +100,9 @@ const HeroSection = () => {
                     element?.scrollIntoView({ behavior: "smooth" });
                   }}
                 >
-                  Let's Connect
+                  Hire Me
                 </Button>
               </div>
-            </div>
-          </div>
-
-          {/* Portrait Image with Halo and Badges */}
-          <div
-            className={`relative transition-all duration-1000 delay-500 ${
-              isVisible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-12"
-            }`}
-          >
-            <div className="relative group flex justify-center lg:justify-end w-80 h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem]">
-              
-              {/* Profile Image - Much larger with high pixel outline border */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-80 h-80 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden shadow-2xl bg-transparent">
-                  <img
-                    src="/profile.svg"
-                    alt="Juraij - Video Editor"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div>
-
-              {/* Floating Elements */}
-              <div className="absolute -top-4 md:-top-6 -right-4 md:-right-6 w-16 h-16 md:w-20 md:h-20 bg-blue-500/20 rounded-full blur-2xl animate-float" />
-              <div className="absolute -bottom-6 md:-bottom-8 -left-6 md:-left-8 w-24 h-24 md:w-32 md:h-32 bg-blue-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
             </div>
           </div>
         </div>
