@@ -148,7 +148,7 @@ const LongFormSection = () => {
     <section
       id="longform"
       ref={sectionRef}
-      className="py-24 md:py-32 relative overflow-hidden"
+      className="py-24 md:py-32 relative overflow-hidden bg-background"
     >
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />

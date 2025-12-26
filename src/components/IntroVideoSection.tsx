@@ -19,15 +19,15 @@ const IntroVideoSection = () => {
   return (
     <section
       id="intro-video"
-      className="relative py-20 lg:py-32 overflow-hidden bg-slate-900"
+      className="relative py-24 md:py-32 overflow-hidden bg-background"
     >
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-[#C3DEFC]/20 to-background" />
       </div>
 
       {/* Glow Effect */}
-      <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-blue-500/8 rounded-full blur-[200px] -translate-y-1/2" />
+      <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-primary/8 rounded-full blur-[200px] -translate-y-1/2" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="text-center space-y-12">
@@ -36,10 +36,10 @@ const IntroVideoSection = () => {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white">
-              Why <span className="text-blue-400">Choose Me?</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground">
+              Why <span className="text-primary">Choose Me?</span>
             </h2>
-            <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               See my work in action - from cinematic storytelling to engaging short-form content
             </p>
           </div>
@@ -51,8 +51,8 @@ const IntroVideoSection = () => {
           >
             <div className="relative group">
               {/* Video Container */}
-              <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-slate-700">
-                <div className="aspect-video bg-slate-800">
+              <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-border">
+                <div className="aspect-video bg-muted">
                   <iframe
                     className="w-full h-full"
                     src="https://www.youtube.com/embed/SdctcW_cG9Y?si=w2yXF6_Zwl-6nyk5&autoplay=1&mute=1&rel=0&modestbranding=1&controls=1"
@@ -80,7 +80,7 @@ const IntroVideoSection = () => {
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
         <button
           onClick={scrollToNext}
-          className="flex flex-col items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors group"
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
         >
           <span className="text-sm font-medium">Continue exploring</span>
           <ArrowDown className="w-5 h-5 animate-bounce" />

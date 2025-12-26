@@ -132,7 +132,7 @@ const ShortFormSection = () => {
     <section
       id="shorts"
       ref={sectionRef}
-      className="py-24 md:py-32 relative overflow-hidden bg-gradient-dark"
+      className="py-24 md:py-32 relative overflow-hidden bg-background"
     >
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-[150px]" />

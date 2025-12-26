@@ -19,12 +19,12 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden bg-slate-900"
+      className="relative min-h-screen flex items-center overflow-hidden bg-background"
     >
       
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-[#C3DEFC]/30 to-background" />
       </div>
 
       {/* Main Content */}
@@ -40,41 +40,41 @@ const HeroSection = () => {
           >
             <div className="space-y-6">
               <div className="space-y-2">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-display font-bold leading-tight text-white">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-display font-bold leading-tight text-foreground">
                   Hey there!
                 </h1>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight text-blue-400">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight text-primary">
                   Juraij here
                 </h2>
               </div>
               
-              <div className="space-y-1">
-                <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-slate-300">
-                  your Partner for
+              <div className="space-y-4 max-w-xl">
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                  Welcome to my creative space! I'm Juraij — the mind behind captivating video edits. I turn raw footage into unforgettable visual stories that hooks hearts and attention.
                 </p>
-                <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-orange-400">
-                  Scroll-Stopping Content
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                  Whether it's motion graphics, visual effects, or seamless storytelling, my passion is to make your vision unforgettable. Let's create something extraordinary together!
                 </p>
               </div>
-            </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full"
-                onClick={scrollToIntro}
-              >
-                Watch My Work
-              </Button>
-              <Button 
-                variant="outline"
-                className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-3 rounded-full"
-                onClick={() => {
-                  const element = document.querySelector("#contact");
-                  element?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                Let's Connect
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full"
+                  onClick={scrollToIntro}
+                >
+                  Watch My Work
+                </Button>
+                <Button 
+                  variant="outline"
+                  className="border-border text-foreground hover:bg-accent px-8 py-3 rounded-full"
+                  onClick={() => {
+                    const element = document.querySelector("#contact");
+                    element?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  Let's Connect
+                </Button>
+              </div>
             </div>
           </div>
 
@@ -111,7 +111,7 @@ const HeroSection = () => {
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
         <button
           onClick={scrollToIntro}
-          className="flex flex-col items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors group"
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
         >
           <span className="text-sm font-medium">See my work</span>
           <ArrowDown className="w-5 h-5 animate-bounce" />
